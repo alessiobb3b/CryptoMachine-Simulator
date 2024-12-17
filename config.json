@@ -1,0 +1,48 @@
+{
+    "executionParameters": {
+        "pqcModule" : 0,
+        "executionStrategy" : 1
+    },
+    "qkdParameters" : {
+        "simTime" : 300000,
+        "keyDim": 1024,
+        "attenuation" : 0.025,
+        "polarizationFid" : 0.9,
+        "distance" : 1000,
+        "ccDelay" : 10e9,
+        "encodingScheme" : "polarization_bin",
+        "ls_params" : {
+            "frequency" : 80e6,
+            "mean_photon_num" : 0.1
+        },
+
+        "detector_params" : [
+            {"efficiency": 0.8, 
+            "dark_count": 10, 
+            "time_resolution": 10, 
+            "count_rate": 50e6},
+            {"efficiency": 0.8, 
+            "dark_count": 10, 
+            "time_resolution": 10, 
+            "count_rate": 50e6}
+        ],
+
+        "data_description" : {
+            "keyDim": "Key dimension (bit)",
+            "attenuation" : "Optical Fiber Attenuation (db/Km)",
+            "polarizationFid" : "Probability of no polarization error for a transmitted qubit",
+            "distance" : "Distnace between sources (m)",
+            "ccDelay" : "CC delay (ns), 10e9 = 10 ms",
+            "ls_params" : {
+                "frequency" : "Frequency of photon creation (Hz)",
+                "mean_photon_num" : "Mean number of photons emitted each period"
+            },
+            "detector_params" : [{
+                "efficiency": "Probability to successfully measure an incoming photon", 
+                "dark_count": "Average number of false positive detections per second", 
+                "time_resolution": "minimum resolving power of photon arrival time (ps)", 
+                "count_rate": "Maximum detection rate; defines detector cooldown time"
+            }]
+        }
+    }
+}
