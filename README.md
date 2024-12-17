@@ -1,6 +1,5 @@
 
-# Crypto-Machine Simulator 
-# Quantum Cryptography and Post-Quantum Hybrid Secure Communication
+# Crypto-Machine Simulator
 
 ## Overview
 This project implements a **hybrid cryptographic communication system** that integrates Quantum Key Distribution (QKD) with Post-Quantum Cryptography (PQC) mechanisms to securely exchange messages. It includes robust mechanisms for:
