@@ -1,0 +1,6 @@
+numpy
+pycryptodome
+cryptography
+pqcrypto
+ipywidgets
+matplotlib
