@@ -571,9 +571,9 @@ class tryExchangeBeforeChangeStrategy(exchangeProtocolStrategy):
         #try:
         print("\t- A Key Exchange attempt via QKD will be made!")
         machine.KEMviaQKD()  # Try QKD first
-        # except:
-        #     print("\t- QKD Exchange Failed!!! Key Exchange will switch through PQC!")
-        #     machine.KEMviaPQC()  # Fallback to PQC
+        except:
+            print("\t- QKD Exchange Failed!!! Key Exchange will switch through PQC!")
+            machine.KEMviaPQC()  # Fallback to PQC
 
     def getStrategyName(self):
         return "Always Try to Exchange Before Changing Strategy"
